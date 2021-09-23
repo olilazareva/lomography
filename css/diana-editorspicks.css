@@ -519,6 +519,34 @@ button:active {
 	text-decoration: none;
 
 }
+/*----------tooltips---------------------------------------------*/
+
+.button .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: rgba(0, 0, 0, 0.72);
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 101;
+	top: 100%;
+	left: 50%;
+	margin-left: -60px;
+	font-size: 50%;
+	font-family: Roboto;
+	font-weight: 300;
+	letter-spacing: normal;
+
+
+}
+
+.button:hover .tooltiptext {
+	visibility: visible;
+}
+
+/*---------------------------------------------------------------*/
 
 
 
