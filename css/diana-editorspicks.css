@@ -435,6 +435,9 @@ button:active {
 	-o-box-shadow: 0 2px 5px #000;
 	box-shadow: 0 2px 5px #000;
 
+	-webkit-transform: translateY(3px);
+	-moz-transform: translateY(3px);
+	-o-transform: translateY(3px);
 	transform: translateY(3px);
 }
 
