@@ -570,15 +570,6 @@ h1 {
 
 /* ---------main music ok---------------------------------------- */
 
-.music {
-	width: 20%;
-	text-align: center;
-	position: absolute;
-	right: calc(139/1366*100%);
-	top: 81%;
-	z-index: 150;
-
-}
 
 h2 {
 	
