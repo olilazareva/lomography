@@ -520,8 +520,7 @@ button:active {
 
 .button .tooltiptext {
 	visibility: hidden;
-	width: 80%;
-	height: 100%;
+	box-sizing: content-box;
 	background-color: rgba(0, 0, 0, 0.72);
 	color: #fff;
 	text-align: center;
