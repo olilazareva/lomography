@@ -529,7 +529,7 @@ button:active {
 	position: absolute;
 	z-index: 101;
 	top: 100%;
-	left: 10%;
+	left: 0;
 	font-size: 60%;
 	line-height: 1;
 	font-family: Roboto;
