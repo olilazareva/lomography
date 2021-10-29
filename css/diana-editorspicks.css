@@ -541,12 +541,11 @@ nav.bottom {
 	visibility: visible;
 
 }
-/*}*/
 
 
 /*=========================================*/
 
-@media (min-width: 450px) {
+@media screen and (min-width: 450px) and (orientation: portrait) {
 
 
 .left-picture img{
@@ -582,7 +581,7 @@ h1 {
 
 /*=========================================*/
 
-@media (min-width: 700px) {
+@media screen and (min-width: 700px) and (orientation: landscape){
 .header_container_left {
 	width: 50%;
 	padding-left: 10%;
