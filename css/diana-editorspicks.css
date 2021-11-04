@@ -35,9 +35,8 @@ html,
 body {
 	height: 100%;
 	width: 100%;
-
 	line-height: 1;
-	font-size: 8px;
+	font-size: 16px;
 	color: #000;
 	font-family: Roboto;
 	font-weight: 300;
@@ -59,13 +58,18 @@ body {
 
 /*-----------mobile first----------------------------------------------------*/
 
+header {
+	min-height: 20vh;
+	width: 100vw;
+	position: relative;
+}
 
 .header_container {
-	height: auto;
-	min-height: 13%;
+	min-height: 20vh;
+	width: 100vw;
 }
 .header_container_left {
-	padding-top: 3rem;
+	padding-top: 3%;
 	padding-left: 10%;
 	position: absolute;
 	z-index: 100;
@@ -75,7 +79,7 @@ body {
 	-o-box-sizing: content-box;
 	box-sizing: content-box;
 
-	min-height: 13%;
+	height: auto;
 	display: inline;
 	align-items: center;
 
@@ -85,7 +89,7 @@ body {
 	min-width: 40%;
 	margin-left: 60%;
 	padding: 0;
-	padding-top: 3rem;
+	padding-top: 3%;
 	position: absolute;
 	z-index: 200;
 
@@ -94,13 +98,13 @@ body {
 	-o-box-sizing: border-box;
 	box-sizing: border-box;
 
-	min-height: 13%;
+	height: auto;
 	display: flex;
 	align-items: center;
 }
 /* ---------top---------------------------------------- */
 .logo {
-	font-size: 3rem;
+	font-size: 1.5em;
 	font-weight: 900;
 	color: inherit;
 	width: 100%;
@@ -108,20 +112,21 @@ body {
 }
 
 .navbar {
-	font-size: 2rem;
+	font-size: 1em;
 	display: block;
-	padding: calc(4/1366*100%) 0;
+	margin-bottom: 0;
+	padding:0.3% 0;
 	background-color: #4E9996;
 	width: 100%;
 	padding-right: 10%;
-	margin-top: 0.5rem;
 
 }
+
 
 .navbar>li{
 	width: 100%;
 	margin-left: 0;
-	padding-left: 1rem;
+	padding-left: 5%;
 	line-height: 100%;
 	color: #fff;
 	white-space: nowrap;
@@ -129,7 +134,7 @@ body {
 }
 
 a {
-	font-size: 2rem;
+	font-size: 1rem;
 	line-height: 100%;
 	color: #fff;
 	white-space: nowrap;
@@ -159,8 +164,7 @@ a:hover {
 
 
 .pics_container{
-	margin-top: 13vh;
-	height: 87vh;
+	height: 80vh;
 	width: 100vw;
 }
 
@@ -181,7 +185,7 @@ a:hover {
 	width: 100vw;
 	height: auto;
 	position: relative;
-	padding-top: 4rem;
+	padding-top:0;
 }
 
 .right-picture img {
@@ -195,13 +199,13 @@ a:hover {
 }
 
 h1 {
-	font-size: 300%;
+	font-size: 1.5em;
 	font-weight: 500;
 	color: #4E9996;
 	text-transform: uppercase;
-	line-height: calc(76/65*100%);
+	line-height: 1em;
 	position: absolute;
-	top: 8vh;
+	top: 0;
 	right: 4vw;
 	text-align: right;
 	word-spacing: 100vw;
@@ -222,7 +226,8 @@ h1 {
 	width: calc(975/512*100%);
 	position: absolute;
 	left: calc(323/1366*100%);
-	top: -710%;
+	/*top: -710%;*/
+	bottom: 0;
 	z-index: 30;
 
 	-webkit-animation: rotation;
@@ -247,10 +252,10 @@ h1 {
 }
 
 .top-container {
-	width: calc(512/1366*100%);
-	height: 130px;
+	width: 60%;
+	height: 15%;
 	position: absolute;
-	left: calc(60% - (512/1366*100%));
+	right: 40%;
 	z-index: 29;
 	overflow: hidden;
 }
@@ -295,6 +300,7 @@ h1 {
 	z-index: 29;
 	overflow: hidden;
 
+
 }
 
 /* ------------------------------------------------------------ */
@@ -302,7 +308,7 @@ h1 {
 .right-decore {
 	width: 800%;
 	position: absolute;
-	left: 50%;
+	left: 0;
 	top: -20%;
 	z-index: 30;
 
@@ -386,8 +392,6 @@ h1 {
 }
 
 
-
-
 .animations {
     	display: none;
     }
@@ -416,7 +420,7 @@ h1 {
 button {
 	background-color: transparent;
 	font-weight: 500;
-	font-size: 3rem;
+	font-size: 1.5em;
 	color: #4E9996;
 	letter-spacing: normal;
 	border: 0;
@@ -456,12 +460,12 @@ button:active {
 	height: auto;
 	border-radius: 0;
 	width: 100vw;
-	left: 0px;
+	left: 0;
 	position: fixed;
 	background-color: #4E9996;
 	margin-right: 0px auto;
-	padding: 0px;
-	bottom: 0px;
+	padding: 1%;
+	bottom: 0;
 	z-index: 1000;
 
 	-webkit-box-sizing: border-box;
@@ -489,8 +493,8 @@ nav.bottom {
 }
 
 .lj {
-	padding:1rem 0rem 1rem 1rem;
-	font-size: calc(10/17*100%);
+	padding:0.5em 0em 0.5em 0.5em;
+	font-size: 0.5em;
 	line-height: 118%;
 	color: #A6DDDA;
 	white-space: nowrap;
@@ -520,7 +524,7 @@ nav.bottom {
 	z-index: 101;
 	bottom: 100%;
 	right: 0;
-	font-size: 60%;
+	font-size: 0.6em;
 	line-height: 1;
 	font-family: Roboto;
 	font-weight: 300;
@@ -541,15 +545,16 @@ nav.bottom {
 	visibility: visible;
 
 }
+/*}*/
 
 
 /*=========================================*/
 
-@media screen and (min-width: 450px) and (orientation: portrait) {
+@media screen and (min-width: 450px) {
 
 
 .left-picture img{
-	height: 100%;
+	height: 85%;
 	width: auto;
 	left: -10%;
 }
@@ -568,11 +573,11 @@ nav.bottom {
 	width: 100vw;
 	height: auto;
 	position: relative;
-	padding-top: 4rem;
+	padding-top: 0;
 }
 
 h1 {
-	font-size: 600%;
+	font-size: 2.3rem;
 
 }
 }
@@ -581,17 +586,14 @@ h1 {
 
 /*=========================================*/
 
-@media screen and (min-width: 700px) and (orientation: landscape){
+@media screen and (min-width: 700px), (max-height: 320px){
 .header_container_left {
 	width: 50%;
 	padding-left: 10%;
-	padding-top: 3em;
-
-
 }
 
 .logo {
-	font-size: 2.5em;
+	font-size: 1.5rem;
 }
 
 .navbar {
@@ -602,10 +604,10 @@ h1 {
 }
 
 .nav-item:not(:last-child) {
-	margin: 0px 2em 0px 0px;
+	margin: 0px 2% 0px 0px;
 }
 .nav-item:first-child {
-	margin: 0px 2em 0px 0.5rem;
+	margin: 0px 2% 0px 0;
 }
 
 .navbar>li{
@@ -648,17 +650,17 @@ a {
 	width: 30vw;
 	position: absolute;
 	z-index: 49;
-	top: 20em;
+	top: 8em;
 	right: 0;
 	
 }
 
 h1 {
 	
-	font-size: 7em;
+	font-size: 200%;
 	top: 0.5em;
 	right: calc(139/1366*100%);
-	padding-right: 20%;
+	padding-right: 33%;
 	
 
 }
@@ -681,7 +683,7 @@ h1 {
 	left: 29vw;
 	top: calc(537/768*100%);
 	width: 15vw;
-	height:5vw;
+	height:10vh;
 	z-index: 100;
 	
 
@@ -691,7 +693,7 @@ button {
 	border: 0;
 	background-color: #E0DFBD;
 	color: #4E9996;
-	font-size: 2vw;
+	font-size: 120%;
 }
 
 
@@ -706,9 +708,9 @@ button {
 	/*background-color: #4E9996;
 	position: fixed;*/
 
-	margin-right: 0px auto;
-	padding: 0px;
-	bottom: 0px;
+	margin-right: 0 auto;
+	padding: 0;
+	bottom: 0;
 	left: calc(20/1366*100%);
 
 }
@@ -720,26 +722,26 @@ nav.bottom {
 .row {
 	list-style: none;
 	margin: 1% 10%;
-}
+	padding: 0;
 
+}
 
 .col-4:not(:last-child) {
 	display: flex;
 	justify-content: space-around;
 }
 
-.col-4:nth-child(2)>li:first-child{
-	padding-left: 2vw;
-}
-
-.col-4:nth-child(2)>li:-child{
-	padding-right: 2vw;
+.col-4:nth-child(2){
+	padding: 0;
+	grid-template-columns: auto auto;
+	justify-content: start;
 }
 
 .col-4>li {
 	display: inline-flex;
 	padding-right: 2vw;
 }
+
 .col-4:last-child>li{
 	padding-right: 1vw;
 	align-items: flex-end;
@@ -748,7 +750,28 @@ nav.bottom {
 /* -------------------------------------------------------------- */
 
 .lj {
-	font-size: 1vw;
+	font-size: 0.8vw;
+}
+
+}
+
+@media screen and (min-width: 1000px){
+
+a {
+	font-size: 1em;
+}
+
+h1 {
+	
+	font-size: 300%;
+	top: 0.5em;
+	right: calc(139/1366*100%);
+	padding-right: 33%;
+	
+
+}
+button {
+	font-size: 150%;
 }
 
 }
